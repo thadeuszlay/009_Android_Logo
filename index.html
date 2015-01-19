@@ -7,8 +7,13 @@ div{
 	margin: 0 auto;
 	background-color: rgba(100, 200, 10, 1);
 }
+.Andy{
+	background-color: transparent;
+	top: 55px;
+	position: relative;
+}
 .torso{
-	height: 200px;
+	height: 175px;
 	width: 200px;
 	border-radius: 0 0 20px 20px;
 }
@@ -24,29 +29,56 @@ div{
 }
 .leg{
 	position: absolute;
-	width:30px;
-	height: 70px;
+	width:50px;
+	height: 80px;
 	border-radius: 0 0 20px 20px;
-	margin-left: 40px;
+	margin-left: 30px;
 	box-shadow: 90px 0 0 rgba(100, 200, 10, 1);
-	margin-top: 199px;
+	margin-top: 174px;
 	float: right;
 	background-color: rgba(100, 200, 10, 1);
 }
 .arm{
-	width:30px;
-	height: 110px;
+	width:50px;
+	height: 150px;
 	position: absolute;
 	border-radius: 20px;
-	margin-left: -35px;
-	box-shadow: 240px 0 0 rgba(100, 200, 10, 1);
+	margin-left: -55px;
+	box-shadow: 260px 0 0 rgba(100, 200, 10, 1);
 	float: right;
+}
+.beep{
+	width: 10px;
+	height: 40px;
+	transform: rotate(-27deg);
+	top: -22px;
+	position: relative;
+	left: 25px;
+	background-color: rgba(100, 200, 10, 1);
+	float: left;
+	border-radius: 10px 10px 0 0;
+}
+#beepRight{
+	width: 10px;
+	height: 40px;
+	position: relative;
+	transform: rotate(27deg);
+	left: 155px;
+	background-color: rgba(100, 200, 10, 1);
+	float: left;
 }
 </style>
 </head>
 <body>
-<div class="beep"></div>
-<div class="brain"></div>
-<div class="torso"><div class="arm"></div><div class="leg"></div></div>
+<div class="Andy">
+	<div class="brain">
+		<div class="beep" id="beepRight"></div>
+		<div class="beep" id="beepLeft"></div>
+	</div>
+	<div class="torso">
+		<div class="arm"></div>
+		<div class="leg"></div>
+	</div>
+</div>
 </body>
 </html>
